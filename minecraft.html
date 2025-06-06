@@ -1,47 +1,54 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title data-i18n="tituloPagina">minecraft</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title data-i18n="tituloPagina">minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrossel.css"> <!-- CSS do carrossel -->
+</head>
+<body>
 
     <button id="toggle-theme" class="theme-button" data-i18n="alternarTema">Alternar Tema</button>
 
-    <body>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html" data-i18n="menu_home">HOME</a></li>
-                <li><a href="cs.html" data-i18n="menu_cs">CS:GO</a></li>
-                <li><a href="valorant.html" data-i18n="menu_valorant">VALORANT</a></li>
-                <li><a href="rainbowsix.html" data-i18n="menu_r6">Rainbow Six</a></li>
-                <li><a href="minecraft.html" data-i18n="menu_minecraft">Minecraft</a></li>
-                <li><a href="contato.html" data-i18n="menu_contato">contato</a></li>
-            </ul>
-        </nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" data-i18n="menu_home">HOME</a></li>
+            <li><a href="cs.html" data-i18n="menu_cs">CS:GO</a></li>
+            <li><a href="valorant.html" data-i18n="menu_valorant">VALORANT</a></li>
+            <li><a href="rainbowsix.html" data-i18n="menu_r6">Rainbow Six</a></li>
+            <li><a href="minecraft.html" data-i18n="menu_minecraft">Minecraft</a></li>
+            <li><a href="contato.html" data-i18n="menu_contato">contato</a></li>
+        </ul>
+    </nav>
 
-        <header class="cabecalho">
-            <h1 data-i18n="titulo_minecraft">Minecraft</h1>
-        </header>
+    <header class="cabecalho">
+        <h1 data-i18n="titulo_minecraft">Minecraft</h1>
+    </header>
 
-        <div class="detalhes">
-            <p data-i18n="descricao_minecraft">
-                Considerado um dos maiores jogos já feitos, Minecraft apresenta uma proposta totalmente distinta dos jogos no estilo FPS. Em vez de se focar em ação frenética, ele oferece uma experiência mais tranquila, permitindo aos jogadores explorar um vasto mundo gerado de forma procedimental e expressar sua criatividade sem limites. A liberdade para construir, criar e viver aventuras únicas transforma Minecraft em uma verdadeira obra-prima que cativa jogadores de todas as idades ao redor do mundo.
-            </p>
+    <div class="detalhes">
+        <p data-i18n="descricao_minecraft">
+            Considerado um dos maiores jogos já feitos, Minecraft apresenta uma proposta totalmente distinta dos jogos no estilo FPS. Em vez de se focar em ação frenética, ele oferece uma experiência mais tranquila, permitindo aos jogadores explorar um vasto mundo gerado de forma procedimental e expressar sua criatividade sem limites. A liberdade para construir, criar e viver aventuras únicas transforma Minecraft em uma verdadeira obra-prima que cativa jogadores de todas as idades ao redor do mundo.
+        </p>
+    </div>
+
+      <div class="carousel-container">
+    <button class="carousel-button" id="prev">&#10094;</button>
+    <div class="carousel-video-wrapper">
+        <div class="carousel-videos">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZLFja_GY8o?si=5b58s3aNOIelpSr7" allowfullscreen></iframe>
         </div>
+    </div>
+    <button class="carousel-button" id="next">&#10095;</button>
+</div>
 
-        <section class="conteudo">
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZLFja_GY8o?si=5b58s3aNOIelpSr7" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </article>
-        </section>
+    <script src="botao.js"></script>
+    <script src="tema.js"></script>
+    <script src="tradutor.js"></script>
+    <script src="carrossel.js"></script> <!-- Script do carrossel -->
 
-        <script src="botao.js"></script>
-        <script src="tema.js"></script>
-        <script src="tradutor.js"></script>
+    <footer class="rodape">
+        <p data-i18n="rodape">&copy; 2025 hihglithgs. Todos os direitos reservados.</p>
+    </footer>
 
-        <footer class="rodape">
-            <p data-i18n="rodape">&copy; 2025 hihglithgs. Todos os direitos reservados.</p>
-        </footer>
-    </body>
+</body>
 </html>
